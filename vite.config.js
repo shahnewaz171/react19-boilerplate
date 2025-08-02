@@ -13,7 +13,7 @@ export default defineConfig({
       gzipSize: true,
       brotliSize: true,
       sourcemap: true,
-      emitFiles: true,
+      emitFile: true,
       title: 'Bundle Analysis',
       filename: 'dist/bundle-report.html'
     })
@@ -22,5 +22,8 @@ export default defineConfig({
     alias: {
       '@': '/src'
     }
+  },
+  build: {
+    sourcemap: true
   }
 });
