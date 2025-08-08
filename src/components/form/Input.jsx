@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import { memo } from 'react';
 import { cn } from '@/utils';
 
 const Input = ({

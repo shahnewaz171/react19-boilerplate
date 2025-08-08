@@ -10,9 +10,8 @@ const submitLoginForm = async (formData) => {
     if (response.status === 200) {
       const userProfile = await getUserProfile(formData.userId);
       return { success: true, message: response.message, userProfile };
-    } else {
-      return { success: false, message: 'Login failed' };
     }
+    return { success: false, message: 'Login failed' };
   } catch (error) {
     return { success: false, message: error.message || 'An error occurred' };
   }
